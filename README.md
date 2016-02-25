@@ -1,9 +1,7 @@
 # generator-react-webpack V2.0 - MBC3 Version
 
-> Yeoman generator for [ReactJS](http://facebook.github.io/react/) - lets you quickly set up a project including karma test runner and [Webpack](http://webpack.github.io/) module system.
-
 # About
-Generator-React-Webpack will help you build new React projects using modern technologies.
+Generator-React-Webpack will help you build new React projects using modern technologies. This is an edited version of generator-react-webpack to serve mbc3 stle project components
 
 Please visit: https://github.com/newtriks/generator-react-webpack for more info.
 
@@ -15,14 +13,14 @@ Please visit: https://github.com/newtriks/generator-react-webpack for more info.
 
 ## Installation
 ```bash
-# Make sure both is installed globally
+# Make sure yeomean installed globally
 npm install -g yo
 pull repo in AppData/Roaming/npm/node_modules
 ```
 
 ## Generating new components
 ```bash
-# cd my-new-project
+# cd into project
 yo react-webpack:component fileName
 ```
 
