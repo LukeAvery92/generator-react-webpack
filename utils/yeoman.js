@@ -58,7 +58,7 @@ let getAllSettingsFromComponentName = (componentName, style) => {
     },
     component: {
       webpackPath: `components/${componentPartPath}/${componentBaseName}.js`,
-      path: `${componentPath.path}/${componentPartPath}/`,
+      path: `${componentPath.path}/${componentPartPath}`,
       fileName: `${componentBaseName}.js`,
       className: `${componentBaseName}`,
       displayName: `${componentFullName}`,
@@ -72,7 +72,7 @@ let getAllSettingsFromComponentName = (componentName, style) => {
     packageFile: {
       path: `src/components/${componentPartPath}/`,
       fileName: `package.json`
-    } 
+    }
   };
 
   return settings;

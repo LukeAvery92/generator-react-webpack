@@ -9,11 +9,11 @@ class <%= component.className %> extends Component {
   render() {
     return (
       <div className={styles.root}>
-        Please edit <%= component.path %><%= component.fileName %> to update this component!
+        Please edit <%= component.path %><%= component.className %> to update this component!
       </div>
     );
   }
-  
+
 }
 
 export default withStyles(<%= component.className %>, styles);
