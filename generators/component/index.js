@@ -33,11 +33,11 @@ module.exports = generator.Base.extend({
     );
 
     // Create the unit test
-    this.fs.copyTpl(
-      this.templatePath('tests/Base.js'),
-      this.destinationPath(settings.component.path + settings.component.folderName  + settings.test.fileName),
-      settings
-    );
+    //this.fs.copyTpl(
+     // this.templatePath('tests/Base.js'),
+      //this.destinationPath(settings.component.path + settings.component.folderName  + settings.test.fileName),
+     // settings
+   // );
 
     this.fs.copyTpl(
       this.templatePath('package/Base.js'),
