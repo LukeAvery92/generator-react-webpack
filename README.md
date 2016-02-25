@@ -16,6 +16,8 @@ Please visit: https://github.com/newtriks/generator-react-webpack for more info.
 # Make sure yeomean installed globally
 npm install -g yo
 pull repo in AppData/Roaming/npm/node_modules
+cd into AppData/Roaming/npm/node_modules/generator-react-webpack
+npm install
 ```
 
 ## Generating new components
