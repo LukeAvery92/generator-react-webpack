@@ -21,21 +21,27 @@ module.exports = generator.Base.extend({
     // Create the style template
     this.fs.copyTpl(
       this.templatePath(`styles/Component${settings.style.suffix}`),
-      this.destinationPath(settings.style.path + settings.style.fileName),
+      this.destinationPath(settings.component.path + settings.component.folderName + settings.style.fileName),
       settings
     );
 
     // Create the component
     this.fs.copyTpl(
       this.templatePath(`components/${componentType}.js`),
-      this.destinationPath(settings.component.path + settings.component.fileName),
+      this.destinationPath(settings.component.path + settings.component.folderName + settings.component.fileName),
       settings
     );
 
     // Create the unit test
     this.fs.copyTpl(
       this.templatePath('tests/Base.js'),
-      this.destinationPath(settings.test.path + settings.test.fileName),
+      this.destinationPath(settings.component.path + settings.component.folderName  + settings.test.fileName),
+      settings
+    );
+
+    this.fs.copyTpl(
+      this.templatePath('package/Base.js'),
+      this.destinationPath(settings.component.path + settings.component.folderName  + settings.packageFile.fileName),
       settings
     );
   }

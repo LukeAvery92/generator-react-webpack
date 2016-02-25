@@ -24,7 +24,7 @@ let getBaseDir = () => {
 let getAllSettingsFromComponentName = (componentName, style) => {
 
   if(!style) {
-    style = 'css';
+    style = 'scss';
   }
 
   // Clean up the path and pull it to parts
@@ -46,26 +46,33 @@ let getAllSettingsFromComponentName = (componentName, style) => {
   // Configure tests
   let testPath = configUtils.getChoiceByKey('path', 'test');
 
+  let packagePath = configUtils.getChoiceByKey('path', 'package');
+
   let settings = {
     style: {
-      webpackPath: `styles/${componentPartPath}/${componentBaseName}${styleSettings.suffix}`,
+      webpackPath: `.${componentPartPath}/${componentBaseName}${styleSettings.suffix}`,
       path: `${stylePaths.path}/${componentPartPath}/`,
       fileName: `${componentBaseName}${styleSettings.suffix}`,
       className: getComponentStyleName(componentBaseName),
       suffix: styleSettings.suffix
     },
     component: {
-      webpackPath: `components/${componentPartPath}/${componentBaseName}Component.js`,
+      webpackPath: `components/${componentPartPath}/${componentBaseName}.js`,
       path: `${componentPath.path}/${componentPartPath}/`,
-      fileName: `${componentBaseName}Component.js`,
-      className: `${componentBaseName}Component`,
-      displayName: `${componentFullName}Component`,
+      fileName: `${componentBaseName}.js`,
+      className: `${componentBaseName}`,
+      displayName: `${componentFullName}`,
+      folderName: `${componentFullName}/`,
       suffix: '.js'
     },
     test: {
       path: `${testPath.path}/components/${componentPartPath}/`,
-      fileName: `${componentBaseName}ComponentTest.js`
-    }
+      fileName: `${componentBaseName}Test.js`
+    },
+    packageFile: {
+      path: `src/components/${componentPartPath}/`,
+      fileName: `package.json`
+    } 
   };
 
   return settings;

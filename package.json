@@ -1,25 +1,49 @@
 {
-  "name": "generator-react-webpack",
-  "version": "3.2.3",
-  "description": "Yeoman generator for using React with Webpack via Babel",
-  "keywords": [
-    "yeoman-generator",
-    "react",
-    "reactjs",
-    "webpack",
-    "scaffold",
-    "framework",
-    "component",
-    "frontend",
-    "front-end",
-    "app"
+  "_args": [
+    [
+      "generator-react-webpack",
+      ""
+    ]
   ],
-  "homepage": "https://github.com/newtriks/generator-react-webpack",
-  "bugs": "https://github.com/newtriks/generator-react-webpack/issues",
+  "_from": "generator-react-webpack@latest",
+  "_id": "generator-react-webpack@3.2.3",
+  "_inCache": true,
+  "_installable": true,
+  "_location": "/generator-react-webpack",
+  "_nodeVersion": "4.3.1",
+  "_npmOperationalInternal": {
+    "host": "packages-6-west.internal.npmjs.com",
+    "tmp": "tmp/generator-react-webpack-3.2.3.tgz_1456262076926_0.5574638976249844"
+  },
+  "_npmUser": {
+    "email": "cs@weblogixx.de",
+    "name": "weblogixx"
+  },
+  "_npmVersion": "3.7.3",
+  "_phantomChildren": {},
+  "_requested": {
+    "name": "generator-react-webpack",
+    "raw": "generator-react-webpack",
+    "rawSpec": "",
+    "scope": null,
+    "spec": "latest",
+    "type": "tag"
+  },
+  "_requiredBy": [
+    "#USER"
+  ],
+  "_resolved": "https://registry.npmjs.org/generator-react-webpack/-/generator-react-webpack-3.2.3.tgz",
+  "_shasum": "c752096e9b6ec91d0f711392c2541b9821413c22",
+  "_shrinkwrap": null,
+  "_spec": "generator-react-webpack",
+  "_where": "",
   "author": {
-    "name": "Simon Bailey",
     "email": "simon@newtriks.com",
+    "name": "Simon Bailey",
     "url": "https://github.com/newtriks"
+  },
+  "bugs": {
+    "url": "https://github.com/newtriks/generator-react-webpack/issues"
   },
   "contributors": [
     {
@@ -28,35 +52,69 @@
       "url": "https://github.com/weblogixx"
     }
   ],
-  "main": "generators/app/index.js",
-  "repository": {
-    "type": "git",
-    "url": "git://github.com/newtriks/generator-react-webpack.git"
-  },
-  "scripts": {
-    "test": "mocha",
-    "release:major": "npm version major && npm publish && git push --follow-tags",
-    "release:minor": "npm version minor && npm publish && git push --follow-tags",
-    "release:patch": "npm version patch && npm publish && git push --follow-tags"
-  },
   "dependencies": {
+    "escodegen": "^1.7.0",
+    "esprima": "^2.7.0",
+    "esprima-walk": "^0.1.0",
     "react-webpack-template": "^1.0.0",
     "underscore.string": "^3.2.2",
     "yeoman-generator": "^0.22.0",
-    "yeoman-welcome": "^1.0.1",
-    "esprima": "^2.7.0",
-    "esprima-walk": "^0.1.0",
-    "escodegen": "^1.7.0"
+    "yeoman-welcome": "^1.0.1"
   },
+  "description": "Yeoman generator for using React with Webpack via Babel",
   "devDependencies": {
     "chai": "^3.2.0",
     "mocha": "^2.3.2",
     "yeoman-assert": "^2.1.1",
     "yeoman-test": "^1.0.0"
   },
-  "engines": {
-    "node": ">=4.0.0",
-    "iojs": ">=1.1.0"
+  "directories": {},
+  "dist": {
+    "shasum": "c752096e9b6ec91d0f711392c2541b9821413c22",
+    "tarball": "http://registry.npmjs.org/generator-react-webpack/-/generator-react-webpack-3.2.3.tgz"
   },
-  "license": "MIT"
+  "engines": {
+    "iojs": ">=1.1.0",
+    "node": ">=4.0.0"
+  },
+  "gitHead": "56d6b9cd484020dff8d5eb36abbd708d14cc18ff",
+  "homepage": "https://github.com/newtriks/generator-react-webpack",
+  "keywords": [
+    "app",
+    "component",
+    "framework",
+    "front-end",
+    "frontend",
+    "react",
+    "reactjs",
+    "scaffold",
+    "webpack",
+    "yeoman-generator"
+  ],
+  "license": "MIT",
+  "main": "generators/app/index.js",
+  "maintainers": [
+    {
+      "name": "newtriks",
+      "email": "simon@newtriks.com"
+    },
+    {
+      "name": "weblogixx",
+      "email": "cs@weblogixx.de"
+    }
+  ],
+  "name": "generator-react-webpack",
+  "optionalDependencies": {},
+  "readme": "ERROR: No README data found!",
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/newtriks/generator-react-webpack.git"
+  },
+  "scripts": {
+    "release:major": "npm version major && npm publish && git push --follow-tags",
+    "release:minor": "npm version minor && npm publish && git push --follow-tags",
+    "release:patch": "npm version patch && npm publish && git push --follow-tags",
+    "test": "mocha"
+  },
+  "version": "3.2.3"
 }

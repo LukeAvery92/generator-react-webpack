@@ -1,3 +1,5 @@
-.<%= style.className %> {
+@import '../variables.scss';
+
+.root {
   border: 1px dashed #f00;
 }

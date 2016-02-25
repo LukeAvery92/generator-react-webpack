@@ -1,23 +1,19 @@
 'use strict';
 
-import React from 'react';
+import React, { Component } from 'react';
+import styles from '<%= style.webpackPath %>';
+import withStyles from 'isomorphic-style-loader/lib/withStyles';
 
-require('<%= style.webpackPath %>');
+class <%= component.className %> extends Component {
 
-class <%= component.className %> extends React.Component {
   render() {
     return (
-      <div className="<%= style.className %>">
-        Please edit <%= component.path %>/<%= component.fileName %> to update this component!
+      <div className={styles.root}>
+        Please edit <%= component.path %><%= component.fileName %> to update this component!
       </div>
     );
   }
+  
 }
 
-<%= component.className %>.displayName = '<%= component.displayName %>';
-
-// Uncomment properties you need
-// <%= component.className %>.propTypes = {};
-// <%= component.className %>.defaultProps = {};
-
-export default <%= component.className %>;
+export default withStyles(<%= component.className %>, styles);

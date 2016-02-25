@@ -96,6 +96,6 @@
         ]
       }
     ],
-    "default": "css"
+    "default": "scss"
   }
 }
