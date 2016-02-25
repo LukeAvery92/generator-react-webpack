@@ -1,7 +1,7 @@
 # generator-react-webpack V2.0 - MBC3 Version
 
 # About
-Generator-React-Webpack will help you build new React projects using modern technologies. This is an edited version of generator-react-webpack to serve mbc3 stle project components
+Generator-React-Webpack will help you build new React projects using modern technologies. This is an edited version of generator-react-webpack to serve mbc3 style project components
 
 Please visit: https://github.com/newtriks/generator-react-webpack for more info.
 
